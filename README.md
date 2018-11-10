@@ -1,11 +1,12 @@
 # VoiceroidReadLTL  
 マストドンのLTLを読み上げするPythonコードです。  
   
-##必要なもの  
+## 必要なもの  
 * vrx(民安☆Talk)  
 * Mastodon.py  
 * HTMLParser  
   
+## 使い方
 以下の変数に文字を登録すると、VOICEROIDに読み上げるようにしています。  
 ```Pyhton
 #読み上げたいトゥートの文字列
@@ -14,4 +15,9 @@ readWords = ["音留"]
 filterWords = ["よしおP"]
 #除外したいユーザーID
 filterID = ["JC", "kiri_bot01"]
+```  
+  
+voiceroid_commandに辞書型で```"コマンド":"プリセット名"```を登録すると、VOICEROID Talk Plusのように使うことができます。
+```Python
+"c)":"結月ゆかり＞"
 ```
